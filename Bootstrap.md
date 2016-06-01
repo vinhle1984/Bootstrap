@@ -17,7 +17,7 @@ xbar
 ```
 
 ```
-## [1] 22.79884
+## [1] 23.37724
 ```
 
 ```r
@@ -25,7 +25,7 @@ ybar
 ```
 
 ```
-## [1] 19.66316
+## [1] 20.04638
 ```
 
 ```r
@@ -33,7 +33,7 @@ meandiff
 ```
 
 ```
-## [1] 3.135687
+## [1] 3.330856
 ```
 
 ```r
@@ -51,7 +51,7 @@ mean(bootnorm) # This value should be close to meandiff
 ```
 
 ```
-## [1] 3.117359
+## [1] 3.323976
 ```
 
 ```r
@@ -76,7 +76,7 @@ meanexpdiff
 ```
 
 ```
-## [1] -0.3785525
+## [1] -0.08126771
 ```
 
 ```r
@@ -95,7 +95,7 @@ mean(bootexp) # This value should be close to meanexpdiff
 ```
 
 ```
-## [1] -0.3814534
+## [1] -0.08537394
 ```
 
 ```r
@@ -103,3 +103,6 @@ hist(bootexp) # histogram of bootexp
 ```
 
 ![](Bootstrap_files/figure-html/unnamed-chunk-8-1.png)<!-- -->
+
+# Summary
+### The central limit theorem states that if we draw enough samples from the population then the sampling distribution of the mean of the sample will be normal. The idea behind the bootstrap is that we treat the orignal sample as the population and then resample from the population many times to give us a better approximation of the sampling distribution. The evidence supports the central limit theorem because the mean of these random samples is very close to the theoretical mean and their distribution is roughly normal. 
