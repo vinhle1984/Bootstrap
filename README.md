@@ -1,5 +1,7 @@
 # Bootstrap
+
 Homework 4 bootstrap with normal and exponential distribution
+
 Created by Vinh Le
 
 
