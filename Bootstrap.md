@@ -10,6 +10,8 @@ y<-rnorm(40,20,4)
 xbar <- mean(x)
 ybar <- mean(y)
 meandiff <- xbar- ybar
+deviationX<-sd(x)
+deviationY<-sd(y)
 ```
 
 ```r
@@ -17,7 +19,7 @@ xbar
 ```
 
 ```
-## [1] 23.37724
+## [1] 22.49371
 ```
 
 ```r
@@ -25,7 +27,7 @@ ybar
 ```
 
 ```
-## [1] 20.04638
+## [1] 20.3266
 ```
 
 ```r
@@ -33,7 +35,23 @@ meandiff
 ```
 
 ```
-## [1] 3.330856
+## [1] 2.167109
+```
+
+```r
+deviationX
+```
+
+```
+## [1] 4.859838
+```
+
+```r
+deviationY
+```
+
+```
+## [1] 4.593651
 ```
 
 ```r
@@ -51,7 +69,15 @@ mean(bootnorm) # This value should be close to meandiff
 ```
 
 ```
-## [1] 3.323976
+## [1] 2.181138
+```
+
+```r
+sd(bootnorm) # This will give the standard deviation for bootnorm
+```
+
+```
+## [1] 0.97008
 ```
 
 ```r
@@ -76,7 +102,7 @@ meanexpdiff
 ```
 
 ```
-## [1] -0.08126771
+## [1] -0.2299604
 ```
 
 ```r
@@ -95,7 +121,7 @@ mean(bootexp) # This value should be close to meanexpdiff
 ```
 
 ```
-## [1] -0.08537394
+## [1] -0.2280657
 ```
 
 ```r
@@ -105,4 +131,4 @@ hist(bootexp) # histogram of bootexp
 ![](Bootstrap_files/figure-html/unnamed-chunk-8-1.png)<!-- -->
 
 # Summary
-### The central limit theorem states that if we draw enough samples from the population then the sampling distribution of the mean of the sample will be normal. The idea behind the bootstrap is that we treat the orignal sample as the population and then resample from the population many times to give us a better approximation of the sampling distribution. The evidence supports the central limit theorem because the mean of these random samples is very close to the theoretical mean and their distribution is roughly normal. 
+### The central limit theorem states that if we draw enough samples from the population then the sampling distribution of the mean of the sample will be normal and the deviation of the distribution is smaller than the orignal. The idea behind the bootstrap is that we treat the orignal sample as the population and then resample from the population many times to give us a better approximation of the sampling distribution. The evidence supports the central limit theorem because the mean of these random samples is very close to the theoretical mean and their distribution is roughly normal. The standard deviation is reduce so the variance in the distribution is smaller smaller than the original. 
