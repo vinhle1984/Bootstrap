@@ -47,9 +47,15 @@ yexp<-rexp(40)
 xexpbar <- mean(xexp)
 yexpbar <- mean(yexp)
 meanexpdiff <- xexpbar- yexpbar
+deviationXexp<-sd(xexp)
+deviationYexp<-sd(yexp)
 ```
 ```{r}
+xexpbar
+yexpbar
 meanexpdiff
+deviationXexp
+deviationYexp
 ```
 ```{r}
 bootexp<-numeric(1000) #initialize bootnorm vector to have 1000 spots in it. 
@@ -63,6 +69,7 @@ bootexp[i] <- bootexpmean # put 1000 mean difference from the boot samples into 
 ```
 ```{r}
 mean(bootexp) # This value should be close to meanexpdiff
+sd(bootexp) # This will give the standard deviation for bootexp
 hist(bootexp) # histogram of bootexp
 ```
 

@@ -19,7 +19,7 @@ xbar
 ```
 
 ```
-## [1] 22.49371
+## [1] 22.69078
 ```
 
 ```r
@@ -27,7 +27,7 @@ ybar
 ```
 
 ```
-## [1] 20.3266
+## [1] 19.46384
 ```
 
 ```r
@@ -35,7 +35,7 @@ meandiff
 ```
 
 ```
-## [1] 2.167109
+## [1] 3.226935
 ```
 
 ```r
@@ -43,7 +43,7 @@ deviationX
 ```
 
 ```
-## [1] 4.859838
+## [1] 5.588451
 ```
 
 ```r
@@ -51,7 +51,7 @@ deviationY
 ```
 
 ```
-## [1] 4.593651
+## [1] 3.449911
 ```
 
 ```r
@@ -69,7 +69,7 @@ mean(bootnorm) # This value should be close to meandiff
 ```
 
 ```
-## [1] 2.181138
+## [1] 3.264363
 ```
 
 ```r
@@ -77,7 +77,7 @@ sd(bootnorm) # This will give the standard deviation for bootnorm
 ```
 
 ```
-## [1] 0.97008
+## [1] 0.9794778
 ```
 
 ```r
@@ -95,6 +95,24 @@ yexp<-rexp(40)
 xexpbar <- mean(xexp)
 yexpbar <- mean(yexp)
 meanexpdiff <- xexpbar- yexpbar
+deviationXexp<-sd(xexp)
+deviationYexp<-sd(yexp)
+```
+
+```r
+xexpbar
+```
+
+```
+## [1] 0.9044199
+```
+
+```r
+yexpbar
+```
+
+```
+## [1] 1.410816
 ```
 
 ```r
@@ -102,7 +120,23 @@ meanexpdiff
 ```
 
 ```
-## [1] -0.2299604
+## [1] -0.5063956
+```
+
+```r
+deviationXexp
+```
+
+```
+## [1] 0.839492
+```
+
+```r
+deviationYexp
+```
+
+```
+## [1] 1.055564
 ```
 
 ```r
@@ -121,7 +155,15 @@ mean(bootexp) # This value should be close to meanexpdiff
 ```
 
 ```
-## [1] -0.2280657
+## [1] -0.5050243
+```
+
+```r
+sd(bootexp) # This will give the standard deviation for bootexp
+```
+
+```
+## [1] 0.200498
 ```
 
 ```r
