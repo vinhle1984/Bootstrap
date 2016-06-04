@@ -19,7 +19,7 @@ xbar
 ```
 
 ```
-## [1] 22.69078
+## [1] 21.79892
 ```
 
 ```r
@@ -27,7 +27,7 @@ ybar
 ```
 
 ```
-## [1] 19.46384
+## [1] 19.7948
 ```
 
 ```r
@@ -35,7 +35,7 @@ meandiff
 ```
 
 ```
-## [1] 3.226935
+## [1] 2.004113
 ```
 
 ```r
@@ -43,7 +43,7 @@ deviationX
 ```
 
 ```
-## [1] 5.588451
+## [1] 5.636067
 ```
 
 ```r
@@ -51,7 +51,7 @@ deviationY
 ```
 
 ```
-## [1] 3.449911
+## [1] 3.64889
 ```
 
 ```r
@@ -69,7 +69,7 @@ mean(bootnorm) # This value should be close to meandiff
 ```
 
 ```
-## [1] 3.264363
+## [1] 1.995415
 ```
 
 ```r
@@ -77,7 +77,7 @@ sd(bootnorm) # This will give the standard deviation for bootnorm
 ```
 
 ```
-## [1] 0.9794778
+## [1] 1.006797
 ```
 
 ```r
@@ -104,7 +104,7 @@ xexpbar
 ```
 
 ```
-## [1] 0.9044199
+## [1] 0.9419045
 ```
 
 ```r
@@ -112,7 +112,7 @@ yexpbar
 ```
 
 ```
-## [1] 1.410816
+## [1] 1.072969
 ```
 
 ```r
@@ -120,7 +120,7 @@ meanexpdiff
 ```
 
 ```
-## [1] -0.5063956
+## [1] -0.1310649
 ```
 
 ```r
@@ -128,7 +128,7 @@ deviationXexp
 ```
 
 ```
-## [1] 0.839492
+## [1] 0.8275953
 ```
 
 ```r
@@ -136,7 +136,7 @@ deviationYexp
 ```
 
 ```
-## [1] 1.055564
+## [1] 1.055587
 ```
 
 ```r
@@ -155,7 +155,7 @@ mean(bootexp) # This value should be close to meanexpdiff
 ```
 
 ```
-## [1] -0.5050243
+## [1] -0.1298894
 ```
 
 ```r
@@ -163,7 +163,7 @@ sd(bootexp) # This will give the standard deviation for bootexp
 ```
 
 ```
-## [1] 0.200498
+## [1] 0.2034324
 ```
 
 ```r
@@ -173,4 +173,4 @@ hist(bootexp) # histogram of bootexp
 ![](Bootstrap_files/figure-html/unnamed-chunk-8-1.png)<!-- -->
 
 # Summary
-### The central limit theorem states that if we draw enough samples from the population then the sampling distribution of the mean of the sample will be normal and the deviation of the distribution is smaller than the orignal. The idea behind the bootstrap is that we treat the orignal sample as the population and then resample from the population many times to give us a better approximation of the sampling distribution. The evidence supports the central limit theorem because the mean of these random samples is very close to the theoretical mean and their distribution is roughly normal. The standard deviation is reduce so the variance in the distribution is smaller smaller than the original. 
+### The central limit theorem states that if we draw enough samples from the population then the sampling distribution of the mean of the sample will be normal and the deviation of the distribution is smaller than the orignal. The idea behind the bootstrap is that we treat the orignal sample as the population and then resample from the population many times to give us a better approximation of the sampling distribution. The evidence supports the central limit theorem because the mean of these random samples is very close to the theoretical mean and their distribution is roughly normal. The standard deviation decreases so the variance in the distribution is smaller smaller than the original. 
